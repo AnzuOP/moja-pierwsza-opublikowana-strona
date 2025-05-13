@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="pl">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kursy komputerowe</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function uruchomSkrypt() {
+                alert("Skrypt został uruchomiony!");
+            }
+        </script>
+        
+</head>
+    <body>
+        <main>
+    <h3>Oblicz miesięczną ratę</h3>
+    <div class="kontrolki">
+    <form action="form">
+        <input type="checkbox" name="Kurs React.js" value="Kurs React.js">Kurs React.js <p></p>
+        <input type="checkbox" name="Kurs JavaScript" value="Kurs JavaScript">Kurs JavaScript <p></p>
+        
+        <label for="quantity">Liczba rat:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" step="1"> <p></p>
+
+
+        <select id="country" name="country" required>
+            <option value="">Wybierz miasto:</option>
+            <option value="pl">Warszawa</option>
+            <option value="de">Katowice</option>
+            <option value="fr">Gdańsk</option>
+        </select>    <p></p>
+
+        <button onclick="uruchomSkrypt()">Oblicz</button>   
+    </form>
+    </div>
+        </main>
+
+
+
+</body>
+</html>
